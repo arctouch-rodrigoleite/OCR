@@ -1,16 +1,126 @@
 PODS:
   - ArcOCR (0.1.0)
+  - Firebase/Core (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseAnalytics (= 5.1.0)
+  - Firebase/CoreOnly (5.5.0):
+    - FirebaseCore (= 5.1.0)
+  - Firebase/MLVision (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVision (= 0.11.0)
+  - Firebase/MLVisionTextModel (5.5.0):
+    - Firebase/CoreOnly
+    - FirebaseMLVisionTextModel (= 0.11.0)
+  - FirebaseAnalytics (5.1.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseInstanceID (~> 3.2)
+    - GoogleAppMeasurement (~> 5.1)
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - GoogleUtilities/NSData+zlib (~> 5.2)
+    - nanopb (~> 0.3)
+  - FirebaseCore (5.1.0):
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.2.0):
+    - FirebaseCore (~> 5.1)
+    - GoogleUtilities/Environment (~> 5.2)
+  - FirebaseMLCommon (0.11.0):
+    - FirebaseCore (~> 5.1)
+  - FirebaseMLVision (0.11.0):
+    - FirebaseCore (~> 5.1)
+    - FirebaseMLCommon (~> 0.11)
+    - GoogleAPIClientForREST/Core (~> 1.3)
+    - GoogleAPIClientForREST/Vision (~> 1.3)
+    - GoogleMobileVision/Detector (~> 1.3)
+  - FirebaseMLVisionTextModel (0.11.0):
+    - GoogleMobileVision/TextDetector (~> 1.3)
+  - GoogleAPIClientForREST/Core (1.3.5):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Vision (1.3.5):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAppMeasurement (5.1.0):
+    - GoogleUtilities/AppDelegateSwizzler (~> 5.2.0)
+    - GoogleUtilities/MethodSwizzler (~> 5.2.0)
+    - GoogleUtilities/Network (~> 5.2)
+    - GoogleUtilities/NSData+zlib (~> 5.2)
+    - nanopb (~> 0.3)
+  - GoogleMobileVision/Detector (1.3.2):
+    - GoogleToolboxForMac/Logger (~> 2.1)
+    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
+    - GTMSessionFetcher/Core (~> 1.1)
+    - Protobuf (~> 3.1)
+  - GoogleMobileVision/TextDetector (1.3.2):
+    - GoogleMobileVision/Detector (~> 1.3)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - GoogleToolboxForMac/Logger (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleToolboxForMac/NSData+zlib (2.1.4):
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - GoogleUtilities/AppDelegateSwizzler (5.2.1):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/Network
+  - GoogleUtilities/Environment (5.2.1)
+  - GoogleUtilities/Logger (5.2.1):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/MethodSwizzler (5.2.1):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/Network (5.2.1):
+    - GoogleUtilities/Logger
+    - GoogleUtilities/NSData+zlib
+    - GoogleUtilities/Reachability
+  - GoogleUtilities/NSData+zlib (5.2.1)
+  - GoogleUtilities/Reachability (5.2.1):
+    - GoogleUtilities/Logger
+  - GTMSessionFetcher (1.2.0):
+    - GTMSessionFetcher/Full (= 1.2.0)
+  - GTMSessionFetcher/Core (1.2.0)
+  - GTMSessionFetcher/Full (1.2.0):
+    - GTMSessionFetcher/Core (= 1.2.0)
+  - nanopb (0.3.8):
+    - nanopb/decode (= 0.3.8)
+    - nanopb/encode (= 0.3.8)
+  - nanopb/decode (0.3.8)
+  - nanopb/encode (0.3.8)
+  - NVActivityIndicatorView (4.3.0):
+    - NVActivityIndicatorView/Presenter (= 4.3.0)
+  - NVActivityIndicatorView/Presenter (4.3.0)
+  - Protobuf (3.6.0)
+  - SteviaLayout (4.3.0)
 
 DEPENDENCIES:
   - ArcOCR (from `../ArcOCR`)
+  - Firebase/Core
+  - Firebase/MLVision
+  - Firebase/MLVisionTextModel
+  - NVActivityIndicatorView
+  - SteviaLayout
 
 EXTERNAL SOURCES:
   ArcOCR:
     :path: ../ArcOCR
 
 SPEC CHECKSUMS:
-  ArcOCR: 40bf06856aa687cc764d3db616bb4913a7ada1b2
+  ArcOCR: 0a9abd5c4f9ea555a54fa03d1ae7b1d6392f4476
+  Firebase: 8c957f9cb3852b519180fb378801b7eeeba4d288
+  FirebaseAnalytics: d4a260c114aec0d765ab5b9c404ac63de1d29381
+  FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
+  FirebaseInstanceID: 8cd2c6cfe7b9ab65ce7e248f6da7f26f6775b9be
+  FirebaseMLCommon: 285b93416df5f37164ad08795cb799f253fda549
+  FirebaseMLVision: b2a14ec0d0d885b6b0d0c04825794715cb755c3e
+  FirebaseMLVisionTextModel: 52a42f7d723e3d2d7d68ca8269722c9b36cd4892
+  GoogleAPIClientForREST: b4c23f6ec9b8c29419d0377168007963d0e25551
+  GoogleAppMeasurement: e785bdb86d3d280abc778156cec323a975f11d1d
+  GoogleMobileVision: 6b0a3a2dae1974ec35d80fdeeacc3a03193642e0
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  GoogleUtilities: 8d9fa00248c475b606fd20b562242060a20117a2
+  GTMSessionFetcher: 0c4baf0a73acd0041bf9f71ea018deedab5ea84e
+  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
+  Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
+  SteviaLayout: 4237718d4e9eaea2d530bd1426637735a7e19de6
 
-PODFILE CHECKSUM: 49ed8aadaa372c8754a9b8d77b325c099618479b
+PODFILE CHECKSUM: 29803c10216df03cd01d95e5513642c7c36de211
 
 COCOAPODS: 1.4.0

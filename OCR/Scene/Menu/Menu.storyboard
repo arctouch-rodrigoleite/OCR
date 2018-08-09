@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NYf-Wx-QmE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--OCR-->
+        <scene sceneID="7Jc-aA-724">
+            <objects>
+                <viewController id="wzu-Cn-1O6" customClass="MenuViewController" customModule="OCR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nqv-DG-voU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="iPv-jA-cO2"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="OCR" id="tDR-wo-f1x"/>
+                    <connections>
+                        <segue destination="ihM-4l-q6h" kind="show" identifier="goToGoogleVision" id="Nmh-yD-HaB"/>
+                        <segue destination="ef7-0N-qOP" kind="show" identifier="goToGoogleVisionPhoto" id="0tb-7s-H4R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jBd-y0-aro" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876" y="146.17691154422789"/>
+        </scene>
+        <!--GoogleVisionViewController-->
+        <scene sceneID="NAJ-XH-tBl">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GoogleVisionViewController" id="ihM-4l-q6h" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yiE-y7-M0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="41"/>
+        </scene>
+        <!--GoogleVisionPhoto-->
+        <scene sceneID="oRq-Zw-Jxx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="GoogleVisionPhoto" id="ef7-0N-qOP" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2GW-WC-8rb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1555" y="238"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="v6V-hC-Weq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="NYf-Wx-QmE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="r9F-lv-ZuC">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wzu-Cn-1O6" kind="relationship" relationship="rootViewController" id="d1G-ai-bcR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xFS-RE-1re" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-63.200000000000003" y="146.17691154422789"/>
+        </scene>
+    </scenes>
+</document>

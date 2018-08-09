@@ -8,10 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		5B6C4C47211B3DFA0039FE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C46211B3DFA0039FE80 /* AppDelegate.swift */; };
-		5B6C4C49211B3DFA0039FE80 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C48211B3DFA0039FE80 /* ViewController.swift */; };
-		5B6C4C4C211B3DFA0039FE80 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C4A211B3DFA0039FE80 /* Main.storyboard */; };
+		5B6C4C49211B3DFA0039FE80 /* GoogleVisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C48211B3DFA0039FE80 /* GoogleVisionViewController.swift */; };
+		5B6C4C4C211B3DFA0039FE80 /* GoogleVisionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C4A211B3DFA0039FE80 /* GoogleVisionViewController.storyboard */; };
 		5B6C4C4E211B3DFB0039FE80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C4D211B3DFB0039FE80 /* Assets.xcassets */; };
 		5B6C4C51211B3DFB0039FE80 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C4F211B3DFB0039FE80 /* LaunchScreen.storyboard */; };
+		5B6C4C74211B87A70039FE80 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C73211B87A70039FE80 /* GoogleService-Info.plist */; };
+		5B6C4C79211B8AE30039FE80 /* GoogleVisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C78211B8AE30039FE80 /* GoogleVisionService.swift */; };
+		5B6C4C7C211B934F0039FE80 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C7B211B934F0039FE80 /* Menu.storyboard */; };
+		5B6C4C7E211B93E50039FE80 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C7D211B93E50039FE80 /* MenuViewController.swift */; };
+		5B6C4C82211C59040039FE80 /* GoogleVisionPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C81211C59040039FE80 /* GoogleVisionPhotoViewController.swift */; };
+		5B6C4C84211C59120039FE80 /* GoogleVisionPhoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C83211C59120039FE80 /* GoogleVisionPhoto.storyboard */; };
 		9352769A013BF34B3F24C14F /* Pods_OCR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00192B9D07873D17931A8CA4 /* Pods_OCR.framework */; };
 /* End PBXBuildFile section */
 
@@ -21,11 +27,17 @@
 		3DAB4ECA843A6F0F90F075EF /* Pods-OCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR/Pods-OCR.release.xcconfig"; sourceTree = "<group>"; };
 		5B6C4C43211B3DFA0039FE80 /* OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6C4C46211B3DFA0039FE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5B6C4C48211B3DFA0039FE80 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5B6C4C4B211B3DFA0039FE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5B6C4C48211B3DFA0039FE80 /* GoogleVisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionViewController.swift; sourceTree = "<group>"; };
+		5B6C4C4B211B3DFA0039FE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/GoogleVisionViewController.storyboard; sourceTree = "<group>"; };
 		5B6C4C4D211B3DFB0039FE80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B6C4C50211B3DFB0039FE80 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5B6C4C52211B3DFB0039FE80 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6C4C73211B87A70039FE80 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5B6C4C78211B8AE30039FE80 /* GoogleVisionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionService.swift; sourceTree = "<group>"; };
+		5B6C4C7B211B934F0039FE80 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		5B6C4C7D211B93E50039FE80 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5B6C4C81211C59040039FE80 /* GoogleVisionPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionPhotoViewController.swift; sourceTree = "<group>"; };
+		5B6C4C83211C59120039FE80 /* GoogleVisionPhoto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GoogleVisionPhoto.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,7 @@
 		5B6C4C45211B3DFA0039FE80 /* OCR */ = {
 			isa = PBXGroup;
 			children = (
+				5B6C4C77211B8AC80039FE80 /* GoogleVisionService */,
 				5B6C4C59211B3E3F0039FE80 /* Scene */,
 				5B6C4C58211B3E070039FE80 /* Supporting Files */,
 			);
@@ -83,6 +96,7 @@
 				5B6C4C4D211B3DFB0039FE80 /* Assets.xcassets */,
 				5B6C4C4F211B3DFB0039FE80 /* LaunchScreen.storyboard */,
 				5B6C4C52211B3DFB0039FE80 /* Info.plist */,
+				5B6C4C73211B87A70039FE80 /* GoogleService-Info.plist */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -90,10 +104,46 @@
 		5B6C4C59211B3E3F0039FE80 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
-				5B6C4C4A211B3DFA0039FE80 /* Main.storyboard */,
-				5B6C4C48211B3DFA0039FE80 /* ViewController.swift */,
+				5B6C4C7A211B918F0039FE80 /* Menu */,
+				5B6C4C7F211B96600039FE80 /* GoogleVision */,
+				5B6C4C80211C58E00039FE80 /* GoogleVisionPhoto */,
 			);
 			path = Scene;
+			sourceTree = "<group>";
+		};
+		5B6C4C77211B8AC80039FE80 /* GoogleVisionService */ = {
+			isa = PBXGroup;
+			children = (
+				5B6C4C78211B8AE30039FE80 /* GoogleVisionService.swift */,
+			);
+			path = GoogleVisionService;
+			sourceTree = "<group>";
+		};
+		5B6C4C7A211B918F0039FE80 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				5B6C4C7B211B934F0039FE80 /* Menu.storyboard */,
+				5B6C4C7D211B93E50039FE80 /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		5B6C4C7F211B96600039FE80 /* GoogleVision */ = {
+			isa = PBXGroup;
+			children = (
+				5B6C4C4A211B3DFA0039FE80 /* GoogleVisionViewController.storyboard */,
+				5B6C4C48211B3DFA0039FE80 /* GoogleVisionViewController.swift */,
+			);
+			path = GoogleVision;
+			sourceTree = "<group>";
+		};
+		5B6C4C80211C58E00039FE80 /* GoogleVisionPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				5B6C4C83211C59120039FE80 /* GoogleVisionPhoto.storyboard */,
+				5B6C4C81211C59040039FE80 /* GoogleVisionPhotoViewController.swift */,
+			);
+			path = GoogleVisionPhoto;
 			sourceTree = "<group>";
 		};
 		A47098660CFC5A9FD667D6AB /* Frameworks */ = {
@@ -165,9 +215,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6C4C7C211B934F0039FE80 /* Menu.storyboard in Resources */,
 				5B6C4C51211B3DFB0039FE80 /* LaunchScreen.storyboard in Resources */,
+				5B6C4C74211B87A70039FE80 /* GoogleService-Info.plist in Resources */,
 				5B6C4C4E211B3DFB0039FE80 /* Assets.xcassets in Resources */,
-				5B6C4C4C211B3DFA0039FE80 /* Main.storyboard in Resources */,
+				5B6C4C84211C59120039FE80 /* GoogleVisionPhoto.storyboard in Resources */,
+				5B6C4C4C211B3DFA0039FE80 /* GoogleVisionViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,9 +233,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-OCR/Pods-OCR-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/GoogleMobileVision/GoogleMVTextDetectorResources.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMVTextDetectorResources.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -215,10 +271,26 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-OCR/Pods-OCR-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/ArcOCR/ArcOCR.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SteviaLayout/Stevia.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ArcOCR.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Stevia.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -232,20 +304,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B6C4C49211B3DFA0039FE80 /* ViewController.swift in Sources */,
+				5B6C4C49211B3DFA0039FE80 /* GoogleVisionViewController.swift in Sources */,
 				5B6C4C47211B3DFA0039FE80 /* AppDelegate.swift in Sources */,
+				5B6C4C79211B8AE30039FE80 /* GoogleVisionService.swift in Sources */,
+				5B6C4C82211C59040039FE80 /* GoogleVisionPhotoViewController.swift in Sources */,
+				5B6C4C7E211B93E50039FE80 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		5B6C4C4A211B3DFA0039FE80 /* Main.storyboard */ = {
+		5B6C4C4A211B3DFA0039FE80 /* GoogleVisionViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				5B6C4C4B211B3DFA0039FE80 /* Base */,
 			);
-			name = Main.storyboard;
+			name = GoogleVisionViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		5B6C4C4F211B3DFB0039FE80 /* LaunchScreen.storyboard */ = {
@@ -379,10 +454,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9C5RFHWCR;
 				INFOPLIST_FILE = "$(SRCROOT)/OCR/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arctouch.OCR;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arctouch.vision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -394,10 +472,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W9C5RFHWCR;
 				INFOPLIST_FILE = "$(SRCROOT)/OCR/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.arctouch.OCR;
+				LIBRARY_SEARCH_PATHS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arctouch.vision;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_INCLUDE_PATHS = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
