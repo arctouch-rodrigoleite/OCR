@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import ArcOCR
+//import ArcOCR
 import Stevia
 import AVFoundation
 

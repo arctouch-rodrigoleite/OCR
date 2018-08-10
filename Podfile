@@ -11,6 +11,7 @@ target 'OCR' do
   pod 'Firebase/MLVision'
   pod 'Firebase/MLVisionTextModel'
   pod 'NVActivityIndicatorView'
-  pod 'ArcOCR', :path => '../ArcOCR'
+  pod 'TesseractOCRiOS'
+#  pod 'ArcOCR', :path => '../ArcOCR'
 
 end

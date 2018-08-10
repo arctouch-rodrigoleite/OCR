@@ -1,5 +1,4 @@
 PODS:
-  - ArcOCR (0.1.0)
   - Firebase/Core (5.5.0):
     - Firebase/CoreOnly
     - FirebaseAnalytics (= 5.1.0)
@@ -88,21 +87,17 @@ PODS:
   - NVActivityIndicatorView/Presenter (4.3.0)
   - Protobuf (3.6.0)
   - SteviaLayout (4.3.0)
+  - TesseractOCRiOS (4.0.0)
 
 DEPENDENCIES:
-  - ArcOCR (from `../ArcOCR`)
   - Firebase/Core
   - Firebase/MLVision
   - Firebase/MLVisionTextModel
   - NVActivityIndicatorView
   - SteviaLayout
-
-EXTERNAL SOURCES:
-  ArcOCR:
-    :path: ../ArcOCR
+  - TesseractOCRiOS
 
 SPEC CHECKSUMS:
-  ArcOCR: 0a9abd5c4f9ea555a54fa03d1ae7b1d6392f4476
   Firebase: 8c957f9cb3852b519180fb378801b7eeeba4d288
   FirebaseAnalytics: d4a260c114aec0d765ab5b9c404ac63de1d29381
   FirebaseCore: ee4b35cf8c8e781da296cc7c15125e4608bb954d
@@ -120,7 +115,8 @@ SPEC CHECKSUMS:
   NVActivityIndicatorView: 963f62bf9f993fcf23218e55958e5b1761b9504c
   Protobuf: 0fc0ad8bec688b2a3017a139953e01374fedbd5f
   SteviaLayout: 4237718d4e9eaea2d530bd1426637735a7e19de6
+  TesseractOCRiOS: 90638afbe43d082433f2e76b384c7901d23956df
 
-PODFILE CHECKSUM: 29803c10216df03cd01d95e5513642c7c36de211
+PODFILE CHECKSUM: 072196bb92b24a195def7ac19a1437cbbe222040
 
 COCOAPODS: 1.4.0

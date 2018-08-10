@@ -24,6 +24,7 @@
                     <connections>
                         <segue destination="ihM-4l-q6h" kind="show" identifier="goToGoogleVision" id="Nmh-yD-HaB"/>
                         <segue destination="ef7-0N-qOP" kind="show" identifier="goToGoogleVisionPhoto" id="0tb-7s-H4R"/>
+                        <segue destination="ajy-aI-kCR" kind="show" identifier="didGoToTesseract" id="4ae-s9-dx7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBd-y0-aro" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -44,7 +45,15 @@
                 <viewControllerPlaceholder storyboardName="GoogleVisionPhoto" id="ef7-0N-qOP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2GW-WC-8rb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1555" y="238"/>
+            <point key="canvasLocation" x="1553" y="146"/>
+        </scene>
+        <!--Tesseract-->
+        <scene sceneID="G8u-Tl-VH9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Tesseract" id="ajy-aI-kCR" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kSu-pE-PvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1465" y="226"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v6V-hC-Weq">

@@ -8,9 +8,10 @@
 
 import UIKit
 import Stevia
-import ArcOCR
+//import ArcOCR
+import NVActivityIndicatorView
 
-class GoogleVisionPhotoViewController: UIViewController, UINavigationControllerDelegate {
+class GoogleVisionPhotoViewController: UIViewController, NVActivityIndicatorViewable, UINavigationControllerDelegate {
 
     // MARK: - VARIABLES
     let imageView: UIImageView = {
@@ -50,11 +51,15 @@ class GoogleVisionPhotoViewController: UIViewController, UINavigationControllerD
         pickerController.imageClosure = { [weak self] image in
             guard let strongSelf = self,
                 let image = image else { return  }
-            strongSelf.imageView.image = image 
+            DispatchQueue.main.async {
+                strongSelf.imageView.image = image
+                strongSelf.startAnimating()
+            }
             strongSelf.googleVisionService.detectText(onCloudDetection: strongSelf.processOnCloud,
                                                       image: image,
                                                       completionHandler: { (value) in
                 DispatchQueue.main.async {
+                    strongSelf.stopAnimating()
                     strongSelf.textView.text = value
                 }
             })

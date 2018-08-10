@@ -19,7 +19,7 @@ class MenuViewController: UIViewController {
         return tableView
     }()
     
-    var options = ["Google Vision", "Google Vision Photo"]
+    var options = ["Google Vision", "Google Vision Photo", "Tesseract"]
     var selectedOption: String?
     
     // MARK: - Vc Life Cycle
@@ -45,6 +45,9 @@ class MenuViewController: UIViewController {
         if let destinationViewController = segue.destination as? GoogleVisionPhotoViewController {
             destinationViewController.title = selectedOption
         }
+        if let destinationViewController = segue.destination as? TesseractViewController {
+            destinationViewController.title = selectedOption
+        }
     }
 
 }
@@ -62,6 +65,7 @@ extension MenuViewController: UITableViewDelegate {
         switch indexPath.row {
         case 0: performSegue(withIdentifier: "goToGoogleVision", sender: nil)
         case 1: performSegue(withIdentifier: "goToGoogleVisionPhoto", sender: nil)
+        case 2: performSegue(withIdentifier: "didGoToTesseract", sender: nil)
         default: break
         }
         
