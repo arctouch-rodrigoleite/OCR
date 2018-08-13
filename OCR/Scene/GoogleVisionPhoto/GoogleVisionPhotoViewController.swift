@@ -8,7 +8,6 @@
 
 import UIKit
 import Stevia
-//import ArcOCR
 import NVActivityIndicatorView
 
 class GoogleVisionPhotoViewController: UIViewController, NVActivityIndicatorViewable, UINavigationControllerDelegate {
@@ -54,15 +53,16 @@ class GoogleVisionPhotoViewController: UIViewController, NVActivityIndicatorView
             DispatchQueue.main.async {
                 strongSelf.imageView.image = image
                 strongSelf.startAnimating()
+                strongSelf.googleVisionService.detectText(onCloudDetection: strongSelf.processOnCloud,
+                                                          image: image,
+                                                          completionHandler: { (value) in
+                                                            DispatchQueue.main.async {
+                                                                strongSelf.stopAnimating()
+                                                                strongSelf.textView.text = value
+                                                            }
+                })
             }
-            strongSelf.googleVisionService.detectText(onCloudDetection: strongSelf.processOnCloud,
-                                                      image: image,
-                                                      completionHandler: { (value) in
-                DispatchQueue.main.async {
-                    strongSelf.stopAnimating()
-                    strongSelf.textView.text = value
-                }
-            })
+            
         }
         setupView()
     }

@@ -64,7 +64,7 @@ final class VisionService {
     else {
       return
     }
-
+    print(results.count)
     delegate?.visionService(self, didDetect: image, results: results)
   }
 }

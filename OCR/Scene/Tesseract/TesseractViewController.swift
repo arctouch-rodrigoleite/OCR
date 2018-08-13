@@ -56,7 +56,18 @@ class TesseractViewController: UIViewController {
 extension TesseractViewController: CameraControllerDelegate {
     
     func cameraController(_ controller: CameraController, didCapture image: CMSampleBuffer) {
-        visionService.handle(buffer: image)
+//        visionService.handle(buffer: image)
+        guard let pixelBuffer = CMSampleBufferGetImageBuffer(image) else {
+            return
+        }
+
+        let ciImage = CIImage(cvPixelBuffer: pixelBuffer)
+        guard let image = ciImage.toUIImage() else {
+            return
+        }
+
+        let corretOrientationImage = image.imageFixedOrientation()
+        tesseractService.handle(image: corretOrientationImage!)
     }
 
 }
@@ -64,12 +75,13 @@ extension TesseractViewController: CameraControllerDelegate {
 extension TesseractViewController: VisionServiceDelegate {
     
     func visionService(_ version: VisionService, didDetect image: UIImage, results: [VNTextObservation]) {
-        boxService.handle(
-            overlayLayer: cameraController.overlayLayer,
-            image: image,
-            results: results,
-            on: cameraController.view
-        )
+//        tesseractService.handle(image: image)
+//        boxService.handle(
+//            overlayLayer: cameraController.overlayLayer,
+//            image: image,
+//            results: results,
+//            on: cameraController.view
+//        )
     }
     
 }
@@ -88,5 +100,3 @@ extension TesseractViewController: TesseractDelegate {
     }
 
 }
-
-

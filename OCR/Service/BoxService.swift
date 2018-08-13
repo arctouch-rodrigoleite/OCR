@@ -25,7 +25,7 @@ final class BoxService {
       layer.removeFromSuperlayer()
     })
 
-    let results = results.filter({ $0.confidence > 0.5 })
+//    let results = results.filter({ $0.confidence > 0.5 })
 
     // box
     results.forEach({ result in
@@ -33,26 +33,55 @@ final class BoxService {
       drawBox(overlayLayer: overlayLayer, normalisedRect: normalisedRect)
     })
 
-    // image
-    guard let biggestResult = results
-      .sorted(by: { $0.boundingBox.width > $1.boundingBox.width })
-      .first else {
-        return
+     //image
+//    guard let biggestResult = results
+//      .sorted(by: { $0.boundingBox.width > $1.boundingBox.width })
+//      .first else {
+//        return
+//    }
+
+//    let normalisedRect = normalise(box: biggestResult)
+    
+//    if let croppedImage = cropImage(image: image, normalisedRect: normalisedRect) {
+//      delegate?.boxService(self, didDetect: croppedImage)
+//    }
+
+    for result in results {
+        for charBox in result.characterBoxes! {
+            if let croppedImage = self.crop(image: image, rectangle: charBox) {
+                delegate?.boxService(self, didDetect: croppedImage)
+            }
+        }
     }
 
-    let normalisedRect = normalise(box: biggestResult)
-    if let croppedImage = cropImage(image: image, normalisedRect: normalisedRect) {
-      delegate?.boxService(self, didDetect: croppedImage)
-    }
-  }
+ }
 
+func crop(image: UIImage, rectangle: VNRectangleObservation) -> UIImage? {
+    var t: CGAffineTransform = CGAffineTransform.identity;
+    t = t.scaledBy(x: image.size.width, y: -image.size.height);
+    t = t.translatedBy(x: 0, y: -1 );
+    let x = rectangle.boundingBox.applying(t).origin.x
+    let y = rectangle.boundingBox.applying(t).origin.y
+    let width = rectangle.boundingBox.applying(t).width
+    let height = rectangle.boundingBox.applying(t).height
+    let fromRect = CGRect(x: x, y: y, width: width, height: height)
+    let drawImage = image.cgImage!.cropping(to: fromRect)
+    if let drawImage = drawImage {
+        let uiImage = UIImage(cgImage: drawImage)
+        return uiImage
+    }
+    return nil
+}
+    
+    
   private func cropImage(image: UIImage, normalisedRect: CGRect) -> UIImage? {
+    
     let x = normalisedRect.origin.x * image.size.width
     let y = normalisedRect.origin.y * image.size.height
     let width = normalisedRect.width * image.size.width
     let height = normalisedRect.height * image.size.height
 
-    let rect = CGRect(x: x, y: y, width: width, height: height).scaleUp(scaleUp: 0.1)
+    let rect = CGRect(x: x, y: y, width: width, height: height).scaleUp(scaleUp: 0.5)
 
     guard let cropped = image.cgImage?.cropping(to: rect) else {
       return nil
@@ -69,7 +98,7 @@ final class BoxService {
     let height = normalisedRect.height * overlayLayer.frame.size.height
 
     let outline = CALayer()
-    outline.frame = CGRect(x: x, y: y, width: width, height: height).scaleUp(scaleUp: 0.1)
+    outline.frame = CGRect(x: x, y: y, width: width, height: height).scaleUp(scaleUp: 0.5)
     outline.borderWidth = 2.0
     outline.borderColor = UIColor.red.cgColor
 

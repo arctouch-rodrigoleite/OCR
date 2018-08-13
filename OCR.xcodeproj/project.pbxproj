@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B0F43DC2121D75C005AA62A /* TesseractPhoto.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B0F43DB2121D75C005AA62A /* TesseractPhoto.storyboard */; };
+		5B0F43DE2121D776005AA62A /* TesseractPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0F43DD2121D776005AA62A /* TesseractPhotoViewController.swift */; };
 		5B526D19211CA3F900F7D275 /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B526D17211CA3F900F7D275 /* CameraController.swift */; };
 		5B526D1A211CA3F900F7D275 /* PickerImageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B526D18211CA3F900F7D275 /* PickerImageController.swift */; };
 		5B526D1C211CA50800F7D275 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B526D1B211CA50800F7D275 /* libz.tbd */; };
@@ -18,6 +20,7 @@
 		5B526D2D211CABE900F7D275 /* VisionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B526D2A211CABE900F7D275 /* VisionService.swift */; };
 		5B526D2E211CABE900F7D275 /* BoxService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B526D2B211CABE900F7D275 /* BoxService.swift */; };
 		5B526D30211CACB600F7D275 /* CIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B526D2F211CACB600F7D275 /* CIImageExtension.swift */; };
+		5B526D33211E233600F7D275 /* AdaptiveThresholdFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B526D32211E233600F7D275 /* AdaptiveThresholdFilter.swift */; };
 		5B6C4C47211B3DFA0039FE80 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C46211B3DFA0039FE80 /* AppDelegate.swift */; };
 		5B6C4C49211B3DFA0039FE80 /* GoogleVisionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B6C4C48211B3DFA0039FE80 /* GoogleVisionViewController.swift */; };
 		5B6C4C4C211B3DFA0039FE80 /* GoogleVisionViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B6C4C4A211B3DFA0039FE80 /* GoogleVisionViewController.storyboard */; };
@@ -36,6 +39,8 @@
 		00192B9D07873D17931A8CA4 /* Pods_OCR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		07CAAAC33A548410FC42EE5E /* Pods-OCR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-OCR/Pods-OCR.debug.xcconfig"; sourceTree = "<group>"; };
 		3DAB4ECA843A6F0F90F075EF /* Pods-OCR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCR.release.xcconfig"; path = "Pods/Target Support Files/Pods-OCR/Pods-OCR.release.xcconfig"; sourceTree = "<group>"; };
+		5B0F43DB2121D75C005AA62A /* TesseractPhoto.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TesseractPhoto.storyboard; sourceTree = "<group>"; };
+		5B0F43DD2121D776005AA62A /* TesseractPhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesseractPhotoViewController.swift; sourceTree = "<group>"; };
 		5B526D17211CA3F900F7D275 /* CameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
 		5B526D18211CA3F900F7D275 /* PickerImageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerImageController.swift; sourceTree = "<group>"; };
 		5B526D1B211CA50800F7D275 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
@@ -47,6 +52,7 @@
 		5B526D2A211CABE900F7D275 /* VisionService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VisionService.swift; sourceTree = "<group>"; };
 		5B526D2B211CABE900F7D275 /* BoxService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoxService.swift; sourceTree = "<group>"; };
 		5B526D2F211CACB600F7D275 /* CIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CIImageExtension.swift; sourceTree = "<group>"; };
+		5B526D32211E233600F7D275 /* AdaptiveThresholdFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdaptiveThresholdFilter.swift; sourceTree = "<group>"; };
 		5B6C4C43211B3DFA0039FE80 /* OCR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCR.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6C4C46211B3DFA0039FE80 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B6C4C48211B3DFA0039FE80 /* GoogleVisionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleVisionViewController.swift; sourceTree = "<group>"; };
@@ -84,11 +90,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		5B0F43DA2121D72F005AA62A /* TesseractPhoto */ = {
+			isa = PBXGroup;
+			children = (
+				5B0F43DB2121D75C005AA62A /* TesseractPhoto.storyboard */,
+				5B0F43DD2121D776005AA62A /* TesseractPhotoViewController.swift */,
+			);
+			name = TesseractPhoto;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		5B526D16211CA3C900F7D275 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				5B526D17211CA3F900F7D275 /* CameraController.swift */,
 				5B526D18211CA3F900F7D275 /* PickerImageController.swift */,
+				5B526D32211E233600F7D275 /* AdaptiveThresholdFilter.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -158,6 +175,7 @@
 			isa = PBXGroup;
 			children = (
 				5B6C4C7A211B918F0039FE80 /* Menu */,
+				5B0F43DA2121D72F005AA62A /* TesseractPhoto */,
 				5B526D1F211CA62600F7D275 /* Tesseract */,
 				5B6C4C7F211B96600039FE80 /* GoogleVision */,
 				5B6C4C80211C58E00039FE80 /* GoogleVisionPhoto */,
@@ -273,6 +291,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B0F43DC2121D75C005AA62A /* TesseractPhoto.storyboard in Resources */,
 				5B6C4C7C211B934F0039FE80 /* Menu.storyboard in Resources */,
 				5B526D23211CA64700F7D275 /* Tesseract.storyboard in Resources */,
 				5B6C4C51211B3DFB0039FE80 /* LaunchScreen.storyboard in Resources */,
@@ -377,6 +396,8 @@
 				5B526D28211CA88B00F7D275 /* TesseractService.swift in Sources */,
 				5B6C4C7E211B93E50039FE80 /* MenuViewController.swift in Sources */,
 				5B526D2E211CABE900F7D275 /* BoxService.swift in Sources */,
+				5B526D33211E233600F7D275 /* AdaptiveThresholdFilter.swift in Sources */,
+				5B0F43DE2121D776005AA62A /* TesseractPhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
