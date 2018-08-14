@@ -26,6 +26,7 @@
                         <segue destination="ef7-0N-qOP" kind="show" identifier="goToGoogleVisionPhoto" id="0tb-7s-H4R"/>
                         <segue destination="ajy-aI-kCR" kind="show" identifier="didGoToTesseract" id="4ae-s9-dx7"/>
                         <segue destination="PNh-tG-sVA" kind="show" identifier="goToTesseractPhoto" id="DL8-4U-x6r"/>
+                        <segue destination="VSF-U9-ve2" kind="show" identifier="goToAR" id="C33-bG-8iG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jBd-y0-aro" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -38,7 +39,7 @@
                 <viewControllerPlaceholder storyboardName="GoogleVisionViewController" id="ihM-4l-q6h" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yiE-y7-M0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="41"/>
+            <point key="canvasLocation" x="1553" y="-57"/>
         </scene>
         <!--GoogleVisionPhoto-->
         <scene sceneID="oRq-Zw-Jxx">
@@ -46,7 +47,7 @@
                 <viewControllerPlaceholder storyboardName="GoogleVisionPhoto" id="ef7-0N-qOP" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2GW-WC-8rb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1553" y="146"/>
+            <point key="canvasLocation" x="1553" y="31"/>
         </scene>
         <!--Tesseract-->
         <scene sceneID="G8u-Tl-VH9">
@@ -54,7 +55,7 @@
                 <viewControllerPlaceholder storyboardName="Tesseract" id="ajy-aI-kCR" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSu-pE-PvN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1465" y="226"/>
+            <point key="canvasLocation" x="1553" y="146"/>
         </scene>
         <!--TesseractPhoto-->
         <scene sceneID="nYq-7V-kBl">
@@ -62,7 +63,15 @@
                 <viewControllerPlaceholder storyboardName="TesseractPhoto" id="PNh-tG-sVA" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YW4-Cd-e3D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1487" y="292"/>
+            <point key="canvasLocation" x="1537" y="225"/>
+        </scene>
+        <!--AR-->
+        <scene sceneID="a2b-bE-eXF">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AR" id="VSF-U9-ve2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="utR-RU-cOv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1494" y="291"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="v6V-hC-Weq">

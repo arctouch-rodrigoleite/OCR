@@ -56,7 +56,7 @@ class TesseractViewController: UIViewController {
 extension TesseractViewController: CameraControllerDelegate {
     
     func cameraController(_ controller: CameraController, didCapture image: CMSampleBuffer) {
-//        visionService.handle(buffer: image)
+//        visionService.handle(buffer: image) // Vision doesn't work as expected
         guard let pixelBuffer = CMSampleBufferGetImageBuffer(image) else {
             return
         }

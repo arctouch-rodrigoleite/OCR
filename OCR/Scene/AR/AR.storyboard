@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f7O-dc-XLu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="0ZZ-mN-FmK">
+            <objects>
+                <viewController id="f7O-dc-XLu" customClass="ARViewController" customModule="OCR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aSJ-Q2-TbF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PkP-H1-3HF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </arscnView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="kAh-lw-u4v">
+                                <rect key="frame" x="0.0" y="20" width="375" height="102"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="102" id="1oA-Ii-1Kg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cYj-B7-4Hv">
+                                <rect key="frame" x="309" y="597" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="HBr-4W-ncg"/>
+                                    <constraint firstAttribute="width" constant="50" id="gM3-QQ-ChU"/>
+                                </constraints>
+                                <state key="normal" title="Scan">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didTapScan:" destination="f7O-dc-XLu" eventType="touchUpInside" id="gaR-mF-4Te"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Wy-HN-yS3" firstAttribute="trailing" secondItem="kAh-lw-u4v" secondAttribute="trailing" id="2Qx-h2-zw7"/>
+                            <constraint firstItem="1Wy-HN-yS3" firstAttribute="bottom" secondItem="cYj-B7-4Hv" secondAttribute="bottom" constant="20" id="7Ru-Ff-t7D"/>
+                            <constraint firstItem="kAh-lw-u4v" firstAttribute="leading" secondItem="1Wy-HN-yS3" secondAttribute="leading" id="Dog-n0-qU0"/>
+                            <constraint firstItem="kAh-lw-u4v" firstAttribute="top" secondItem="1Wy-HN-yS3" secondAttribute="top" id="MFd-7l-d1w"/>
+                            <constraint firstItem="1Wy-HN-yS3" firstAttribute="trailing" secondItem="cYj-B7-4Hv" secondAttribute="trailing" constant="16" id="eiO-Vz-Y4T"/>
+                            <constraint firstItem="1Wy-HN-yS3" firstAttribute="trailing" secondItem="PkP-H1-3HF" secondAttribute="trailing" id="g0t-QK-Blx"/>
+                            <constraint firstItem="cYj-B7-4Hv" firstAttribute="top" secondItem="1Wy-HN-yS3" secondAttribute="bottom" constant="-70" id="mFF-aG-5Qh"/>
+                            <constraint firstItem="1Wy-HN-yS3" firstAttribute="bottom" secondItem="PkP-H1-3HF" secondAttribute="bottom" id="o5u-oF-ljY"/>
+                            <constraint firstItem="PkP-H1-3HF" firstAttribute="top" secondItem="1Wy-HN-yS3" secondAttribute="top" id="pHH-c4-4aq"/>
+                            <constraint firstItem="PkP-H1-3HF" firstAttribute="leading" secondItem="1Wy-HN-yS3" secondAttribute="leading" id="vpG-aR-Wao"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1Wy-HN-yS3"/>
+                    </view>
+                    <connections>
+                        <outlet property="sceneView" destination="PkP-H1-3HF" id="bYF-Hx-PDs"/>
+                        <outlet property="textView" destination="kAh-lw-u4v" id="Z3E-Zn-747"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRA-3T-nAT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="157.59999999999999" y="178.56071964017991"/>
+        </scene>
+    </scenes>
+</document>

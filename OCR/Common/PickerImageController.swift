@@ -81,15 +81,15 @@ extension PickerImageController: UIImagePickerControllerDelegate {
     }
     
     public func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
-        if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
-            DispatchQueue.main.async { [weak self] in
-                guard let strongSelf = self,
-                    let closure = strongSelf.imageClosure else { return }
-               closure(image)
-            }
-        }
         picker.dismiss(animated: true) {
             self.dismiss(animated: true, completion: nil)
+            if let image = info[UIImagePickerControllerOriginalImage] as? UIImage {
+                DispatchQueue.main.async { [weak self] in
+                    guard let strongSelf = self,
+                        let closure = strongSelf.imageClosure else { return }
+                    closure(image)
+                }
+            }
         }
     }
     

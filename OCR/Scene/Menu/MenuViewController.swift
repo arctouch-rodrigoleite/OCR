@@ -19,7 +19,7 @@ class MenuViewController: UIViewController {
         return tableView
     }()
     
-    var options = ["Google Vision", "Google Vision Photo", "Tesseract", "Tesseract Photo"]
+    var options = ["Google Vision", "Google Vision Photo", "Tesseract", "Tesseract Photo", "ARKit Reference Images"]
     var selectedOption: String?
     
     // MARK: - Vc Life Cycle
@@ -39,18 +39,19 @@ class MenuViewController: UIViewController {
     
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let destinationViewController = segue.destination as? GoogleVisionViewController {
-            destinationViewController.title = selectedOption
-        }
-        if let destinationViewController = segue.destination as? GoogleVisionPhotoViewController {
-            destinationViewController.title = selectedOption
-        }
-        if let destinationViewController = segue.destination as? TesseractViewController {
-            destinationViewController.title = selectedOption
-        }
-        if let destinationViewController = segue.destination as? TesseractPhotoViewController {
-            destinationViewController.title = selectedOption
-        }
+        segue.destination.title = selectedOption
+//        if let destinationViewController = segue.destination as? GoogleVisionViewController {
+//            destinationViewController.title = selectedOption
+//        }
+//        if let destinationViewController = segue.destination as? GoogleVisionPhotoViewController {
+//            destinationViewController.title = selectedOption
+//        }
+//        if let destinationViewController = segue.destination as? TesseractViewController {
+//            destinationViewController.title = selectedOption
+//        }
+//        if let destinationViewController = segue.destination as? TesseractPhotoViewController {
+//            destinationViewController.title = selectedOption
+//        }
     }
 
 }
@@ -70,6 +71,7 @@ extension MenuViewController: UITableViewDelegate {
         case 1: performSegue(withIdentifier: "goToGoogleVisionPhoto", sender: nil)
         case 2: performSegue(withIdentifier: "didGoToTesseract", sender: nil)
         case 3: performSegue(withIdentifier: "goToTesseractPhoto", sender: nil)
+        case 4: performSegue(withIdentifier: "goToAR", sender: nil)
         default: break
         }
         
