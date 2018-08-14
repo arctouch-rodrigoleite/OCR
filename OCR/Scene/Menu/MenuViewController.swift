@@ -40,18 +40,6 @@ class MenuViewController: UIViewController {
     // MARK: - Navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         segue.destination.title = selectedOption
-//        if let destinationViewController = segue.destination as? GoogleVisionViewController {
-//            destinationViewController.title = selectedOption
-//        }
-//        if let destinationViewController = segue.destination as? GoogleVisionPhotoViewController {
-//            destinationViewController.title = selectedOption
-//        }
-//        if let destinationViewController = segue.destination as? TesseractViewController {
-//            destinationViewController.title = selectedOption
-//        }
-//        if let destinationViewController = segue.destination as? TesseractPhotoViewController {
-//            destinationViewController.title = selectedOption
-//        }
     }
 
 }
